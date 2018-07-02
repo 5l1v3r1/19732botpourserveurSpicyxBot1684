@@ -33,10 +33,285 @@ if(message.content === 'SpicyxBot')
 message.channel.send('Mon préfix est : \`!\`, faites \`!help\` pour __afficher mon aide__')
 
 if (message.content === "!help"){
-  message.delete()
-     message.channel.send("\n\n**Bienvenue sur la commande** \`!help\`.\n\n:shield: **MODERATION** :shield:\n```!purge\n!clearall\n!kick\n!ban\n!deletechannel```\n\n:pushpin: **UTILE** :pushpin:\n```!help\n!ping\n!si\n!bi\n!ui\n!afk\n!avatar\n!report```\n\n:tada: **FUN** :tada:\n```!say\n!rps\n!8ball\n!roll\n!vcs\n!flip\n!virus\n!lucky\n!clearme```\n*Pour plus d'informations sur une commande, veuillez faire* \`!help\` *suivi de la commande*\n*Vous pouvez aussi faire* \`!help MODERATION\` / \`!help UTILE\` / \`!help FUN\` *pour afficher les commandes de la cathégorie désiré*")
+     message.channel.send("\n\n**Bienvenue sur la commande** \`!help\`.\n\n:shield: **MODERATION** :shield:\n```!purge\n!clearall\n!kick\n!ban\n!deletechannel```\n\n:pushpin: **UTILE** :pushpin:\n```!help\n!ping\n!si\n!bi\n!ui\n!afk\n!avatar\n!aide\n!report```\n\n:tada: **FUN** :tada:\n```!say\n!rps\n!8ball\n!roll\n!vcs\n!flip\n!virus\n!lucky\n!clearme```\n*Pour plus d'informations sur une commande, veuillez faire* \`!help\` *suivi de la commande*\n*Vous pouvez aussi faire* \`!help MODERATION\` / \`!help UTILE\` / \`!help FUN\` *pour afficher les commandes de la cathégorie désiré*")
      console.log("Commande help effectuée !")
      return;
+  }
+
+  if(message.content === "!help aide"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !aide')
+    .addField("Description :", "demander de l'aide au staff du serveur")
+    .addField("Utilisation :", "!aide <texte>")
+    .addField("Exemple :", "!aide Je n'arrive pas à me connecter au salon chocolat")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help clearme"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !clearme')
+    .addField("Description :", "effacer la commande")
+    .addField("Utilisation :", "!clearme")
+    .addField("Exemple :", "!clearme")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help lucky"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !lucky')
+    .addField("Description :", "savoir son nombre chance")
+    .addField("Utilisation :", "!lucky")
+    .addField("Exemple :", "!lucky")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help virus"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !virus')
+    .addField("Description :", "lancer un faux virus")
+    .addField("Utilisation :", "!virus")
+    .addField("Exemple :", "!virus")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help flip"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !flip')
+    .addField("Description :", "jouer à pile ou face")
+    .addField("Utilisation :", "!flip")
+    .addField("Exemple :", "!flip")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help vcs"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !vcs')
+    .addField("Description :", "parler entre serveurs à distance")
+    .addField("Utilisation :", "!vcs <texte>")
+    .addField("Exemple :", "!vcs Hey !")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help roll"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !roll')
+    .addField("Description :", "jouer au dé")
+    .addField("Utilisation :", "!roll")
+    .addField("Exemple :", "!roll")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help 8ball"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !8ball')
+    .addField("Description :", "répondre aux questions")
+    .addField("Utilisation :", "!8ball <question>")
+    .addField("Exemple :", "!8ball J'aime le chocolat ?")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+  if(message.content === "!help rps"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !rps')
+    .addField("Description :", "jouer à pierre, feuille, ciseaux")
+    .addField("Utilisation :", "!rps <pierre, feuille, ciseaux>")
+    .addField("Exemple :", "!rps pierre")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+
+  if(message.content === "!help say"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !say')
+    .addField("Description :", "faire parler le bot")
+    .addField("Utilisation :", "!say <texte>")
+    .addField("Exemple :", "!say J'aime le chocolat")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help report"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !report')
+    .addField("Description :", "signaler un utilisateur au staff du serveur")
+    .addField("Utilisation :", "!report @user <raison>")
+    .addField("Exemple :", "!report @SpicyxBot Il a mangé des chocolats en cachette")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help avatar"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !avatar')
+    .addField("Description :", "afficher les avatars")
+    .addField("Utilisation :", "!avatar @user")
+    .addField("Exemple :", "!avatar @SpicyxBot")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help afk"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !afk')
+    .addField("Description :", "signaler votre absence et votre retour")
+    .addField("Utilisation :", "!afk")
+    .addField("Exemple :", "!afk")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help ui"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !ui')
+    .addField("Description :", "afficher les informations sur l'utilisateur qui effectue la commande")
+    .addField("Utilisation :", "!ui")
+    .addField("Exemple :", "!ui")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help bi"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !bi')
+    .addField("Description :", "afficher les informtaions sur le bot")
+    .addField("Utilisation :", "!bi")
+    .addField("Exemple :", "!bi")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help si"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !si')
+    .addField("Description :", "afficher les informations sur le serveur")
+    .addField("Utilisation :", "!si")
+    .addField("Exemple :", "!si")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help ping"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !ping')
+    .addField("Description :", "afficher son pings")
+    .addField("Utilisation :", "!ping")
+    .addField("Exemple :", "!ping")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help help"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !help')
+    .addField("Description :", "afficher les commandes")
+    .addField("Utilisation :", "!help")
+    .addField("Exemple :", "!help")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help deletechannel"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !deletechannel')
+    .addField("Description :", "supprimer un salon textuel")
+    .addField("Utilisation :", "!deletechannel")
+    .addField("Exemple :", "!deletechannel")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help ban"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !ban')
+    .addField("Description :", "bannir un utilisateur")
+    .addField("Utilisation :", "!ban @user <raison>")
+    .addField("Exemple :", "!ban @SpicyxBot Il a mangé des chocolats en cachette")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help kick"){
+    let purgeemebed = new Discord.RichEmbed()
+    .setColor("#7289DA")
+    .setTitle('Commande : !kick')
+    .addField("Description :", "kicker un utilisateur")
+    .addField("Utilisation :", "!kick @user <raison>")
+    .addField("Exemple :", "!kick @SpicyxBot Il a mangé des chocolats en cachette")
+    .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+    message.channel.send(purgeemebed);
+    }
+
+  if(message.content === "!help purge"){
+let purgeemebed = new Discord.RichEmbed()
+.setColor("#7289DA")
+.setTitle('Commande : !purge')
+.addField("Description :", "nettoyer un salon textuel")
+.addField("Utilisation :", "!purge <amount>")
+.addField("Exemple :", "!purge 10")
+.setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+.setTimestamp()
+message.channel.send(purgeemebed);
+}
+
+  if (message.content === '!help clearall'){
+let clearallembed = new Discord.RichEmbed()
+.setColor("#7289DA")
+.setTitle('Commande : !clearall')
+.addField("Description :", "nettoyer un salon textuel de 100 messages")
+.addField("Utilisation :", "!clearall")
+.addField("Exemple :", "!clearall")
+.setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+.setTimestamp()
+message.channel.send(clearallembed);
   }
 
   if (message.content === "!help MODERATION"){
@@ -46,7 +321,7 @@ if (message.content === "!help"){
     }
 
     if (message.content === "!help UTILE"){
-         message.channel.send("\n\n**Bienvenue sur la commande** \`!help UTILE\`.\n\n:pushpin: **UTILE** :pushpin:\n```!help\n!ping\n!si\n!bi\n!ui\n!afk\n!avatar\n!report```\n*Pour plus d'informations sur une commande, veuillez faire* \`!help\` *suivi de la commande*")
+         message.channel.send("\n\n**Bienvenue sur la commande** \`!help UTILE\`.\n\n:pushpin: **UTILE** :pushpin:\n```!help\n!ping\n!si\n!bi\n!ui\n!afk\n!avatar\n!aide\n!report```\n*Pour plus d'informations sur une commande, veuillez faire* \`!help\` *suivi de la commande*")
          console.log("Commande help effectuée !")
          return;
       }
@@ -343,8 +618,36 @@ message.channel.send(pingEmbed)
 
 }
 
-if(command === 'report'){
-if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":x: *Vous n'avez pas la permission d'utiliser cette commande !*");
+if(command === 'aide'){
+  var rreason = args.join(" ").slice();
+  
+  let day = message.createdAt.getDate()
+  let month = 1 + message.createdAt.getMonth()
+  let year = message.createdAt.getFullYear()
+  let hour = message.createdAt.getHours()
+  let min = message.createdAt.getMinutes()
+  var reportEmbed = new Discord.RichEmbed()
+      .setColor("#7289DA")
+      .setAuthor(message.author.username, message.author.avatarURL)
+      .setThumbnail(message.author.avatarURL)
+      .addField("Utilisateur a aider", `${message.author} avec ID: ${message.author.id}`)
+      .addField("Date",`${day}/${month}/${year} à ${hour}:${min}`)
+      .addField("L'aide demandé", `**${rreason}**`)
+      .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
+    .setTimestamp()
+  
+  var reportschannel = message.guild.channels.find(`name`, "aides");
+  if (!reportschannel) return message.channel.send(":x: *Veuillez créer un salon \`aides\`*");
+  
+  
+  message.delete().catch(O_o => { });
+  reportschannel.send(reportEmbed);
+
+  message.channel.send(":white_check_mark: *Un membre du staff répondra à votre aide, veuillez patienter !*")
+  
+  }
+
+if(message.content === '!report'){
 var rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
 if (!rUser) return message.channel.send(":x: *Veuillez mentionner l'utilisateur à report !*");
 var rreason = args.join(" ").slice(22);
@@ -364,7 +667,7 @@ var reportEmbed = new Discord.RichEmbed()
     .addField("Date du report",`${day}/${month}/${year} à ${hour}:${min}`)
     .addField("Raison", `**${rreason}**`)
     .setFooter("SpicyxBot", "https://cdn.discordapp.com/avatars/460134595296493568/c7fad676368c819cee7c6758c1402af5.png?size=256")
-   .setTimestamp()
+    .setTimestamp()
 
 var reportschannel = message.guild.channels.find(`name`, "reports");
 if (!reportschannel) return message.channel.send(":x: *Veuillez créer un salon \`reports\`*");
@@ -460,10 +763,10 @@ var choice = args[0];
     } else if (numb > 50) {
       var choice2 = "pierre";
     } else {
-      var choice2 = "siceaux";
+      var choice2 = "ciseaux";
     }
-    if (choice2 == "siceaux") {
-      var response = "J'ai choisi **siceaux** ! :v: J'ai gagné !"
+    if (choice2 == "ciseaux") {
+      var response = "J'ai choisi **ciseaux** ! :v: J'ai gagné !"
     } else if (choice2 == "papier") {
       var response = "J'ai choisi **papier** ! :hand_splayed: Egalité !"
     } else {
@@ -477,35 +780,35 @@ var choice = args[0];
     } else if (numb > 50) {
       var choice2 = "pierre";
     } else {
-      var choice2 = "siceaux";
+      var choice2 = "ciseaux";
     }
     if (choice2 == "papier") {
       var response = "J'ai choisi **papier** ! :hand_splayed: J'ai gagné !"
     } else if (choice2 == "pierre") {
       var response = "J'ai choisi **pierre** ! :punch: Egalité !"
     } else {
-      var response = "J'ai choisi **siceaux** ! :v: Tu as gagné !"
+      var response = "J'ai choisi **ciseaux** ! :v: Tu as gagné !"
     }
     message.channel.send(response);
-  } else if (choice == "siceaux" || choice == "s") {
+  } else if (choice == "ciseaux" || choice == "s") {
     var numb = Math.floor(Math.random() * 100);
     if (numb <= 50) {
       var choice2 = "papier";
     } else if (numb > 50) {
       var choice2 = "pierre";
     } else {
-      var choice2 = "siceaux";
+      var choice2 = "ciseaux";
     }
     if (choice2 == "pierre") {
       var response = "J'ai choisi **papier** ! :hand_splayed: Tu as gagné !"
-    } else if (choice2 == "siceaux") {
+    } else if (choice2 == "ciseaux") {
       var response = "J'ai choisi **Scissors** ! :v: Egalité !"
     } else {
       var response = "J'ai choisi **pierre** ! :punch: J'ai gagné !"
     }
     message.channel.send(response);
   } else {
-    message.channel.send(`:x: *Vous avez mal effectué la commande.* \`${prefix}rps\` <pierre|papier|siceaux>`);
+    message.channel.send(`:x: *Vous avez mal effectué la commande.* \`${prefix}rps\` <pierre|papier|ciseaux>`);
   }
 }
 })
